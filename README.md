@@ -1,9 +1,6 @@
 # The World Beyond The Ice Wall website
 
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
 ```text
 ├── public/
@@ -12,21 +9,15 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── content/
 │   ├── layouts/
 │   └── pages/
+├── .gitignore
 ├── astro.config.mjs
-├── README.md
+├── package-lock.json
 ├── package.json
+├── README.md
 └── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -39,10 +30,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
 ## Credit
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This website has been created by **Big L** for *The World Beyond The Ice Wall*, a worldbuilding project created by **Ohawhewhe**.
+
+Copyright (c) 2023 The World Beyond The Ice Wall
