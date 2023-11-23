@@ -1,6 +1,5 @@
 # The World Beyond The Ice Wall website
 
-!(Illuminaty_copy.png)[public/Illuminati_copy.png]
 
 ## 🚀 Project Structure
 
