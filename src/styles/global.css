@@ -57,6 +57,7 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
+	font-family: "Copperplate Gothic", bold;
 }
 h1 {
 	font-size: 3.052em;
@@ -152,3 +153,15 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* .ribbon.id-1 {
+	background-image: url(/ribbon1.png);
+	background-color: #d09e29;
+    height: 61px;
+    left: 0;
+    top: 0;
+    background-repeat: repeat-x;
+    background-position: center;
+    display: block;
+    width: 100%;
+} */
