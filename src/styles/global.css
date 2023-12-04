@@ -8,6 +8,7 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
+	--white: #F5F5F5;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -91,9 +92,9 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	font-family: 'Copperplate Gothic', bold;
+	font-family: 'Times New Roman', Times, serif;/*'Copperplate Gothic', bold;*/
 	width: 60%;
-	font-size: medium;
+	font-size: 1em;
 }
 .prose p {
 	margin-bottom: 2em;
