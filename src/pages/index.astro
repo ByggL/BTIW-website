@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Separator from '../components/Separator.astro';
 ---
 
 <!doctype html>
@@ -19,19 +20,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>{SITE_TITLE}</h1>
-			<div style="diplay:flex; justify-content: center;"><img src="../../public/Illuminati_copy.png"/></div>
-			
+			<img src="../../public/Illuminati_copy.png" style="display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			padding: 0px;
+			width: 25%;"/>
+			<Separator/>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to
-				build a personal website, blog, or portfolio with Astro.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada mauris eget ipsum condimentum, id faucibus odio vestibulum. Sed sodales malesuada eros, sed accumsan nisi iaculis ut. Donec sed suscipit quam. Nam posuere arcu nisi, nec pretium ligula faucibus ac. Donec luctus ante id tortor varius ultricies. Curabitur efficitur maximus quam, tincidunt lobortis metus tristique at. Sed tincidunt enim nibh, in dapibus lacus aliquet ac. Suspendisse placerat pulvinar velit. Duis dui sapien, varius nec tempor ut, maximus eget mauris. Donec et odio sit amet neque sollicitudin porttitor. In hendrerit malesuada nibh at ullamcorper. Phasellus sed massa mi. Quisque molestie nunc ac nulla dictum porttitor quis at velit. Proin et pellentesque dolor.
+				Mauris id ex sit amet nulla scelerisque pretium. Integer nec mollis tellus. Vivamus vel scelerisque sem, tristique congue eros. Aenean scelerisque auctor luctus. Proin tincidunt a sapien nec fringilla. Ut at dictum nibh. Nunc ipsum lorem, sollicitudin non odio vitae, pulvinar dignissim ante. Aliquam id venenatis orci. Suspendisse gravida mauris ac neque placerat, eget tempus lorem tristique. Vivamus interdum, purus at auctor rhoncus, nunc sem porttitor metus, ut consequat nunc mi eu erat. In ullamcorper nulla a elit pharetra, eu aliquet risus volutpat. Praesent malesuada urna ut justo posuere, eu iaculis metus mattis. Mauris vehicula, nibh eu lacinia efficitur, sapien magna rhoncus neque, vel venenatis leo purus at leo. Donec viverra lacus sem, sit amet gravida elit porta porttitor. 
 			</p>
+			<Separator/>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like
-				Tailwind, React, or Vue to your project.
+				The World Beyond The Ice Wall is....
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada mauris eget ipsum condimentum, id faucibus odio vestibulum. Sed sodales malesuada eros, sed accumsan nisi iaculis ut. Donec sed suscipit quam. Nam posuere arcu nisi, nec pretium ligula faucibus ac. Donec luctus ante id tortor varius ultricies. Curabitur efficitur maximus quam, tincidunt lobortis metus tristique at. Sed tincidunt enim nibh, in dapibus lacus aliquet ac. Suspendisse placerat pulvinar velit. Duis dui sapien, varius nec tempor ut, maximus eget mauris. Donec et odio sit amet neque sollicitudin porttitor. In hendrerit malesuada nibh at ullamcorper. Phasellus sed massa mi. Quisque molestie nunc ac nulla dictum porttitor quis at velit. Proin et pellentesque dolor.
 			</p>
+			<Separator/>
 			<p>Here are a few ideas on how to get started with the template:</p>
 			<ul>
 				<li>Edit this page in <code>src/pages/index.astro</code></li>
