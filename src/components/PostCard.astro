@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+interface Props {
+    title: string;
+    subtext: string;
+    img: string;
+}
+
+const {title, subtext, img} = Astro.props;
+---
+
+<div class="flex-child">
+<img src={img} class="postcard"/>
+<p class="titletext">{title}</p>
+<p class="subtext">{subtext}</p>
+</div>
