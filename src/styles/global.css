@@ -43,6 +43,9 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+html {
+	background-image: url(../../public/SATURN.JPG);
+}
 main {
 	width: 85%;
 	max-width: calc(100% - 2em);
@@ -214,3 +217,8 @@ hr {
 .flex-child {
     flex:1;;
 }  
+
+.headerlink {
+	font-family: 'Times New Roman', Times, serif, bold;
+
+}
