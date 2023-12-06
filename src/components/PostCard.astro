@@ -4,13 +4,37 @@ interface Props {
     title: string;
     subtext: string;
     img: string;
+    link: string;
 }
 
-const {title, subtext, img} = Astro.props;
+const {title, subtext, img, link} = Astro.props;
 ---
 
 <div class="flex-child">
-<img src={img} class="postcard"/>
-<p class="titletext">{title}</p>
-<p class="subtext">{subtext}</p>
+    <a href={link}>
+        <img src={img} class="postcard"/>
+    </a>
+    <h4 class="titletext">{title}</h4>
+    <p class="subtext">{subtext}</p>
 </div>
+
+<style>
+    .postcard {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid --white;
+	height: 500px;
+    }
+
+    .subtext {
+    	font-size: small;
+    	text-align:center;
+    }
+
+    .titletext {
+    	font-size: medium;
+    	text-align:center;
+    	font-weight: bold;
+    }
+</style>

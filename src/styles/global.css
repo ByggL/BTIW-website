@@ -191,26 +191,7 @@ hr {
 	display: none;
   }
 
-.postcard {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 5px solid --white;
-	height: 500px;
-}
-
-.subtext {
-	font-size: small;
-	text-align:center;
-}
-
-.titletext {
-	font-size: medium;
-	text-align:center;
-	font-weight: bold;
-}
-
-.main-posts {
+.posts {
 	display: flex;
 }
 
