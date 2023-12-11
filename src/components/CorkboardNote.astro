@@ -1,0 +1,27 @@
+---
+import "../styles/global.css"
+
+interface Props {
+    name: string;
+    description: string;
+    x: string;  // has to be written as "N px", N being an integer
+    y: string;  // has to be written as "N px", N being an integer
+}
+
+const {name, description, x, y} = Astro.props;
+
+const left = x + "px";
+const top = y + "px";
+---
+
+<div>
+    <h5>{name}</h5>
+    <p>{description}</p>
+</div>
+
+<style define:vars={{ left, top }}>
+div {
+    left: var(--left);
+    top: var(--top);
+}
+</style>
