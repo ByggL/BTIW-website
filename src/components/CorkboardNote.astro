@@ -17,11 +17,21 @@ const top = y + "px";
 <div>
     <h5>{name}</h5>
     <p>{description}</p>
+    <p id="debug">Coord: {x}, {y}</p>
 </div>
 
 <style define:vars={{ left, top }}>
 div {
     left: var(--left);
     top: var(--top);
+    position:relative;
+    background-color: yellow;
+    border: 14px ridge black;
+    display: inline-block;
+
+}
+
+#debug {
+    font-size: xx-small;
 }
 </style>
