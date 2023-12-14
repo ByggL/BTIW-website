@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CorkboardNote from '../components/CorkboardNote.astro';
+import Line from '../components/Line.astro';
 ---
 
 <!doctype html>
@@ -20,7 +21,8 @@ import CorkboardNote from '../components/CorkboardNote.astro';
 		<Header title={SITE_TITLE} />
 			<div class="corkboard">
 				<CorkboardNote name="Ohawhewhe" description='I am Oha, hello !' x="0" y='0'/>
-				<CorkboardNote name="Ohawhewhe" description='I am Oha, hello !' x="500" y='400'/>
+				<CorkboardNote name="Ohawhewhe" description='I am Oha, hello !' x="700" y='300'/>
+				<Line x1="0", y1="0", x2="750", y2="350" color="blue"/>
 			</div>
 		
 		<!-- <Footer /> -->
