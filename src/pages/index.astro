@@ -1,10 +1,10 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import Separator from '../components/Separator.astro';
-import PostCard from '../components/PostCard.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Separator from "../components/Separator.astro";
+import PostCard from "../components/PostCard.astro";
 ---
 
 <!doctype html>
@@ -12,7 +12,7 @@ import PostCard from '../components/PostCard.astro';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			html{
+			html {
 				background-image: url(../../public/SATURN.JPG);
 			}
 		</style>
@@ -21,37 +21,99 @@ import PostCard from '../components/PostCard.astro';
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>{SITE_TITLE}</h1>
-			<img src="../../public/Illuminati_copy.png" style="display: block;
+			<img
+				src="../../public/Illuminati_copy.png"
+				style="display: block;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 2em;
 			margin-bottom: 2em;
 			padding: 0px;
-			width: 25%;"/>
-			<Separator/>
+			width: 25%;"
+			/>
+			<Separator />
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada mauris eget ipsum condimentum, id faucibus odio vestibulum. Sed sodales malesuada eros, sed accumsan nisi iaculis ut. Donec sed suscipit quam. Nam posuere arcu nisi, nec pretium ligula faucibus ac. Donec luctus ante id tortor varius ultricies. Curabitur efficitur maximus quam, tincidunt lobortis metus tristique at. Sed tincidunt enim nibh, in dapibus lacus aliquet ac. Suspendisse placerat pulvinar velit. Duis dui sapien, varius nec tempor ut, maximus eget mauris. Donec et odio sit amet neque sollicitudin porttitor. In hendrerit malesuada nibh at ullamcorper. Phasellus sed massa mi. Quisque molestie nunc ac nulla dictum porttitor quis at velit. Proin et pellentesque dolor.
-				Mauris id ex sit amet nulla scelerisque pretium. Integer nec mollis tellus. Vivamus vel scelerisque sem, tristique congue eros. Aenean scelerisque auctor luctus. Proin tincidunt a sapien nec fringilla. Ut at dictum nibh. Nunc ipsum lorem, sollicitudin non odio vitae, pulvinar dignissim ante. Aliquam id venenatis orci. Suspendisse gravida mauris ac neque placerat, eget tempus lorem tristique. Vivamus interdum, purus at auctor rhoncus, nunc sem porttitor metus, ut consequat nunc mi eu erat. In ullamcorper nulla a elit pharetra, eu aliquet risus volutpat. Praesent malesuada urna ut justo posuere, eu iaculis metus mattis. Mauris vehicula, nibh eu lacinia efficitur, sapien magna rhoncus neque, vel venenatis leo purus at leo. Donec viverra lacus sem, sit amet gravida elit porta porttitor. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+				malesuada mauris eget ipsum condimentum, id faucibus odio
+				vestibulum. Sed sodales malesuada eros, sed accumsan nisi
+				iaculis ut. Donec sed suscipit quam. Nam posuere arcu nisi, nec
+				pretium ligula faucibus ac. Donec luctus ante id tortor varius
+				ultricies. Curabitur efficitur maximus quam, tincidunt lobortis
+				metus tristique at. Sed tincidunt enim nibh, in dapibus lacus
+				aliquet ac. Suspendisse placerat pulvinar velit. Duis dui
+				sapien, varius nec tempor ut, maximus eget mauris. Donec et odio
+				sit amet neque sollicitudin porttitor. In hendrerit malesuada
+				nibh at ullamcorper. Phasellus sed massa mi. Quisque molestie
+				nunc ac nulla dictum porttitor quis at velit. Proin et
+				pellentesque dolor. Mauris id ex sit amet nulla scelerisque
+				pretium. Integer nec mollis tellus. Vivamus vel scelerisque sem,
+				tristique congue eros. Aenean scelerisque auctor luctus. Proin
+				tincidunt a sapien nec fringilla. Ut at dictum nibh. Nunc ipsum
+				lorem, sollicitudin non odio vitae, pulvinar dignissim ante.
+				Aliquam id venenatis orci. Suspendisse gravida mauris ac neque
+				placerat, eget tempus lorem tristique. Vivamus interdum, purus
+				at auctor rhoncus, nunc sem porttitor metus, ut consequat nunc
+				mi eu erat. In ullamcorper nulla a elit pharetra, eu aliquet
+				risus volutpat. Praesent malesuada urna ut justo posuere, eu
+				iaculis metus mattis. Mauris vehicula, nibh eu lacinia
+				efficitur, sapien magna rhoncus neque, vel venenatis leo purus
+				at leo. Donec viverra lacus sem, sit amet gravida elit porta
+				porttitor.
 			</p>
-			<Separator/>
+			<Separator />
 			<p>
-				The World Beyond The Ice Wall is....
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada mauris eget ipsum condimentum, id faucibus odio vestibulum. Sed sodales malesuada eros, sed accumsan nisi iaculis ut. Donec sed suscipit quam. Nam posuere arcu nisi, nec pretium ligula faucibus ac. Donec luctus ante id tortor varius ultricies. Curabitur efficitur maximus quam, tincidunt lobortis metus tristique at. Sed tincidunt enim nibh, in dapibus lacus aliquet ac. Suspendisse placerat pulvinar velit. Duis dui sapien, varius nec tempor ut, maximus eget mauris. Donec et odio sit amet neque sollicitudin porttitor. In hendrerit malesuada nibh at ullamcorper. Phasellus sed massa mi. Quisque molestie nunc ac nulla dictum porttitor quis at velit. Proin et pellentesque dolor.
+				The World Beyond The Ice Wall is.... Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit. Quisque malesuada mauris eget ipsum
+				condimentum, id faucibus odio vestibulum. Sed sodales malesuada
+				eros, sed accumsan nisi iaculis ut. Donec sed suscipit quam. Nam
+				posuere arcu nisi, nec pretium ligula faucibus ac. Donec luctus
+				ante id tortor varius ultricies. Curabitur efficitur maximus
+				quam, tincidunt lobortis metus tristique at. Sed tincidunt enim
+				nibh, in dapibus lacus aliquet ac. Suspendisse placerat pulvinar
+				velit. Duis dui sapien, varius nec tempor ut, maximus eget
+				mauris. Donec et odio sit amet neque sollicitudin porttitor. In
+				hendrerit malesuada nibh at ullamcorper. Phasellus sed massa mi.
+				Quisque molestie nunc ac nulla dictum porttitor quis at velit.
+				Proin et pellentesque dolor.
 			</p>
-			<Separator/>
+			<Separator />
 			<div class="posts">
-				<PostCard img="../../public/3.0 lowres.png" title="BTIW 3.0" subtext="Geographical map of BTIW" link="https://www.deviantart.com/ohawhewhe/art/THE-WORLD-BEYOND-THE-ICE-WALL-3-0-968699994"/>
-				<PostCard img="../../public/3.0 lowres.png" title="BTIW 3.0" subtext="Geographical map of BTIW" link="https://www.deviantart.com/ohawhewhe/art/THE-WORLD-BEYOND-THE-ICE-WALL-3-0-968699994"/>
+				<PostCard
+					img="../../public/3.0 lowres.png"
+					title="BTIW 3.0"
+					subtext="Geographical map of BTIW"
+					link="https://www.deviantart.com/ohawhewhe/art/THE-WORLD-BEYOND-THE-ICE-WALL-3-0-968699994"
+				/>
+				<PostCard
+					img="../../public/3.0 lowres.png"
+					title="BTIW 3.0"
+					subtext="Geographical map of BTIW"
+					link="https://www.deviantart.com/ohawhewhe/art/THE-WORLD-BEYOND-THE-ICE-WALL-3-0-968699994"
+				/>
 			</div>
-			<Separator/>
+			<Separator />
 			<h3>Featured posts</h3>
-			
+
 			<div class="posts">
-				<PostCard img="../../public/placeholder_post.png" title="A featured post" subtext="Wow" link="/blog/homo-egressus"/>
-				<PostCard img="../../public/placeholder_post.png" title="A featured post" subtext="Wow" link="/blog/homo-egressus"/>
-				<PostCard img="../../public/placeholder_post.png" title="A featured post" subtext="Wow" link="/blog/homo-egressus"/>
+				<PostCard
+					img="../../public/placeholder_post.png"
+					title="A featured post"
+					subtext="Wow"
+					link="/blog/homo-egressus"
+				/>
+				<PostCard
+					img="../../public/placeholder_post.png"
+					title="A featured post"
+					subtext="Wow"
+					link="/blog/homo-egressus"
+				/>
+				<PostCard
+					img="../../public/placeholder_post.png"
+					title="A featured post"
+					subtext="Wow"
+					link="/blog/homo-egressus"
+				/>
 			</div>
-			
 		</main>
 		<Footer />
 	</body>

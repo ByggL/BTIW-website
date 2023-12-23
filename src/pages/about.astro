@@ -1,10 +1,10 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import CorkboardNote from '../components/CorkboardNote.astro';
-import Line from '../components/Line.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CorkboardNote from "../components/CorkboardNote.astro";
+import Line from "../components/Line.astro";
 ---
 
 <!doctype html>
@@ -12,36 +12,45 @@ import Line from '../components/Line.astro';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			html{
+			html {
 				background-image: url(../../public/SATURN.JPG);
 			}
 		</style>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-			<div class="corkboard">
-				<CorkboardNote name="Ohawhewhe" description='I am Oha, hello !' x="0" y='0'/>
-				<CorkboardNote name="Ohawhewhe" description='I am Oha, hello !' x="700" y='300'/>
-				<Line x1="0", y1="0", x2="750", y2="350" color="blue"/>
-			</div>
-		
+		<div class="corkboard">
+			<CorkboardNote
+				name="Ohawhewhe"
+				description="I am Oha, hello !"
+				x="0"
+				y="0"
+			/>
+			<CorkboardNote
+				name="Ohawhewhe"
+				description="I am Oha, hello !"
+				x="700"
+				y="300"
+			/>
+			<Line x1="0" , y1="0" , x2="750" , y2="350" color="blue" />
+		</div>
+
 		<!-- <Footer /> -->
+		<style>
+			.corkboard {
+				position: relative;
+				background-image: url("../../public/cork.JPG");
+				border: 14px ridge #ff6550;
+				height: 100%;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 10px;
+			}
+
+			body {
+				height: 100vh;
+			}
+		</style>
 	</body>
 </html>
-
-<style>
-	.corkboard {
-		position: relative;
-		background-image: url("../../public/cork.JPG");
-		border: 14px ridge #ff6550;
-		height: 100%;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10px;
-	}
-
-	body {
-		height: 100vh;
-	}
-</style>

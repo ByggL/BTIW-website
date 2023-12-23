@@ -1,37 +1,37 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
 
 interface Props {
-    name: string;
-    description: string;
-    x: string;  // has to be written as "N px", N being an integer
-    y: string;  // has to be written as "N px", N being an integer
+	name: string;
+	description: string;
+	x: string; // has to be written as "N px", N being an integer
+	y: string; // has to be written as "N px", N being an integer
 }
 
-const {name, description, x, y} = Astro.props;
+const { name, description, x, y } = Astro.props;
 
 const left = x + "px";
 const top = y + "px";
 ---
 
 <div>
-    <h5>{name}</h5>
-    <p>{description}</p>
-    <p id="debug">Coord: {x}, {y}</p>
+	<h5>{name}</h5>
+	<p>{description}</p>
+	<p id="debug">Coord: {x}, {y}</p>
 </div>
 
 <style define:vars={{ left, top }}>
-div {
-    left: var(--left);
-    top: var(--top);
-    position:relative;
-    background-color: yellow;
-    border: 14px ridge black;
-    display: inline-block;
-    position: absolute;
-}
+	div {
+		left: var(--left);
+		top: var(--top);
+		position: relative;
+		background-color: yellow;
+		border: 14px ridge black;
+		display: inline-block;
+		position: absolute;
+	}
 
-#debug {
-    font-size: xx-small;
-}
+	#debug {
+		font-size: xx-small;
+	}
 </style>

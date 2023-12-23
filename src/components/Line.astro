@@ -1,13 +1,16 @@
 ---
 interface Props {
-    x1 : string;  // should be a number
-    x2 : string;  // should be a number
-    y1 : string;  // should be a number
-    y2 : string;  // should be a number
-    color : string;
+	x1: string; // should be a number
+	x2: string; // should be a number
+	y1: string; // should be a number
+	y2: string; // should be a number
+	color: string;
 }
 
-const {x1, x2, y1, y2, color} = Astro.props;
+const { x1, x2, y1, y2, color } = Astro.props;
 ---
 
-<svg width="1000" height="1000"><line x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} stroke-width="5"/></svg>
+<svg width="1000" height="1000"
+	><line x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} stroke-width="5"
+	></line></svg
+>
